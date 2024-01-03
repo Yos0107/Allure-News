@@ -1,0 +1,38 @@
+.allure-pro-admin-notice {
+	position: relative;
+}
+
+.allure-pro-admin-notice p {
+	font-size: 16px;
+}
+
+.allure-pro-admin-notice code {
+	display: inline-block;
+}
+
+.allure-pro-admin-notice .links {
+	margin: 12px 0;
+}
+
+.allure-pro-admin-notice .links a {
+	height: auto;
+	padding: 3px 15px;
+	margin-left: 12px;
+	text-transform: uppercase;
+}
+
+.allure-pro-admin-notice .links a .dashicons {
+	line-height: 1.2;
+}
+
+.allure-pro-admin-notice .links a.button-primary {
+	margin-left: 0;
+}
+
+.allure-pro-admin-notice  .allure-pro-admin-notice-dismiss {
+	text-decoration: none;
+}
+.allure-pro-admin-notice code, 
+.allure-pro-admin-notice kbd{
+	font-weight: bold;
+}
