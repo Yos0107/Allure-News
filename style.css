@@ -1907,7 +1907,7 @@ blockquote {
 ##   Top Bar
 *   ----------------------------------------------------- */
 .top-bar {
-    background-color: #EB455F;
+    background-color: #00ADB5;
     width: 100%;
 }
 
@@ -2435,7 +2435,7 @@ blockquote {
 
 .main-navigation ul li a:hover,
 .main-navigation ul li.current-menu-item>a {
-    background-color: #EB455F;
+    background-color: #00ADB5;
     color: #fff;
 
 
