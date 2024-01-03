@@ -102,8 +102,6 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
             'allure-news-extra-hide-read-time' => false,
             'allure-news-extra-post-formats-icons'=> true,
             'allure-news-enable-category-color' => false,
-            'allure-news-font-awesome-version-loading' => 'version-4',
-
             'allure-news-breadcrumb-display-from-option'=> 'theme-default',
             'allure-news-breadcrumb-display-from-plugins'=> 'yoast',
 

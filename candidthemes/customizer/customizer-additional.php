@@ -78,24 +78,3 @@ $wp_customize->add_control( 'allure_news_options[allure-news-extra-hide-read-tim
     'type'      => 'checkbox',
     'priority'  => 15,
 ) );
-
-/*Font awesome version loading*/
-$wp_customize->add_setting( 'allure_news_options[allure-news-font-awesome-version-loading]', array(
-    'capability'        => 'edit_theme_options',
-    'transport' => 'refresh',
-    'default'           => $default['allure-news-font-awesome-version-loading'],
-    'sanitize_callback' => 'allure_news_sanitize_select'
- ) );
- $wp_customize->add_control( 'allure_news_options[allure-news-font-awesome-version-loading]', array(
-   'choices' => array(
-    'version-4'    => __('Current Theme Used Version 4','allure-news'),
-    'version-5'   => __('Fontawesome Version 5','allure-news'),
-    'version-6'   => __('New Fontawesome Version 6','allure-news'),
- ),
-   'label'     => __( 'Select the preferred fontawesome version', 'allure-news' ),
-   'description' => __('You can select the latest fontawesome version to get more options for icons', 'allure-news'),
-   'section'   => 'allure_news_extra_options',
-   'settings'  => 'allure_news_options[allure-news-font-awesome-version-loading]',
-   'type'      => 'select',
-   'priority'  => 15,
- ) );

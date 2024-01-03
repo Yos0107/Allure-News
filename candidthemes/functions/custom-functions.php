@@ -252,9 +252,6 @@ if (!function_exists('allure_news_custom_body_class')) :
         } else {
             $classes[] = 'right-sidebar';
         }
-        if (!empty($allure_news_theme_options['allure-news-font-awesome-version-loading'])) {
-            $classes[] = 'allure-news-fontawesome-' . $allure_news_theme_options['allure-news-font-awesome-version-loading'];
-        }
 
         return $classes;
     }
