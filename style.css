@@ -1680,7 +1680,8 @@ blockquote {
     color: #fff;
 }
 
-.allure-news-menu-social li a[href*="facebook.com"]:before {
+.allure-news-menu-social li a[href*="facebook.com"]:before,
+.allure-news-menu-social li a[href*="fb.com"]:before {
     content: "\f09a";
 }
 
@@ -1699,8 +1700,9 @@ blockquote {
     background-color: #DF2029;
 }
 
-.allure-news-menu-social li a[href*="twitter.com"]:before {
-    content: "\f099";
+.allure-news-menu-social li a[href*="twitter.com"]:before,
+.allure-news-menu-social li a[href*="x.com"]:before {
+    content: "\e61b";
 }
 
 .allure-news-menu-social li a[href*="twitter.com"],
@@ -1905,7 +1907,7 @@ blockquote {
 ##   Top Bar
 *   ----------------------------------------------------- */
 .top-bar {
-    background-color: #0d19a3;
+    background-color: #EB455F;
     width: 100%;
 }
 
@@ -2433,7 +2435,7 @@ blockquote {
 
 .main-navigation ul li a:hover,
 .main-navigation ul li.current-menu-item>a {
-    background-color: #0d19a3;
+    background-color: #EB455F;
     color: #fff;
 
 
@@ -3392,14 +3394,6 @@ div.breadcrumbs {
     margin: 0 15px 0 5px;
 }
 
-.allure-news-fontawesome-version-5 .ct-post-carousel .slick-next:before,
-.allure-news-fontawesome-version-5 .ct-post-carousel .slick-prev:before,
-.allure-news-fontawesome-version-5 #primary-menu .menu-item-has-children>a:after,
-.allure-news-fontawesome-version-5 #primary-menu .page_item_has_children>a:after,
-.allure-news-fontawesome-version-5 .breadcrumbs li:after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-}
 
 .breadcrumbs li.trail-end:after {
     content: '';
@@ -4120,36 +4114,7 @@ body.admin-bar .ct-sticky {
     }
 }
 
-/* FONT AWESOME 5,6 ICON CSS UPDATE */
-.allure-news-fontawesome-version-5 #masthead .close:before,
-.allure-news-fontawesome-version-5 .fa,
-.allure-news-fontawesome-version-5 .widget[class*="widget_"]>ul li:before,
-.allure-news-fontawesome-version-5 .widget[class*="widget_"]>ol li:before,
-.allure-news-fontawesome-version-5 .meta .posted-on:before,
-.allure-news-fontawesome-version-5 .meta .byline:before,
-.allure-news-fontawesome-version-5 .btn:hover:after,
-.allure-news-fontawesome-version-5 .posts-navigation .nav-links a:hover:after,
-.allure-news-fontawesome-version-5 .post-navigation .nav-links>.nav-previous .nav-subtitle:before,
-.allure-news-fontawesome-version-5 .post-navigation .nav-links>.nav-next .nav-subtitle:after,
-.allure-news-fontawesome-version-5 .breadcrumb-trail .trial-items li+li:before,
-.allure-news-fontawesome-version-5 .posts-navigation .nav-previous:before,
-.allure-news-fontawesome-version-5 .post-navigation .nav-previous:before,
-.allure-news-fontawesome-version-5 .posts-navigation .nav-next:after,
-.allure-news-fontawesome-version-5 .post-navigation .nav-next:after,
-.breadcrumbs ul li+li:before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-}
-
-.allure-news-fontawesome-version-5 .allure-news-menu-social li a::before {
-    font-family: "Font Awesome 5 Brands";
-    font-weight: 400;
-}
-
-.allure-news-fontawesome-version-5 .facebook:before,
-.allure-news-fontawesome-version-5 .allure-news-menu-social li a[href*="facebook.com"]:before {
-    content: "\f39e";
-}
+/* FONT AWESOME 5 ICON CSS UPDATE */
 
 .tiktok:before,
 .allure-news-menu-social li a[href*="tiktok.com"]:before {
@@ -4190,7 +4155,8 @@ body.admin-bar .ct-sticky {
     background-color: #000;
 }
 
-.allure-news-fontawesome-version-6 .allure-news-menu-social li a[href*="twitter.com"]:before {
+.allure-news-fontawesome-version-6 .allure-news-menu-social li a[href*="twitter.com"]:before,
+.allure-news-fontawesome-version-6 .allure-news-menu-social li a[href*="x.com"]:before {
     content: "\e61b";
 }
 
