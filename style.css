@@ -2464,21 +2464,26 @@ blockquote {
     position: relative;
 }
 
-.main-navigation ul li a:hover:before,
+.main-navigation ul li a:before,
 .main-navigation ul li.current-menu-item a:before {
     content: "";
     position: absolute;
-    width: 80%;
+    width: 0;
     height: 2px;
     top: 80%;
     left: 50%;
     transform: translate(-50%);
-    background-color: #fff;
+    background-color: #007BFF;
+    transition: width 0.3s ease-out;
+}
+
+.main-navigation ul li a:hover::before {
+    width: 80%;
 }
 
 .main-navigation ul li a:hover,
-.main-navigation ul li.current-menu-item>a {
-    color: #fff;
+.main-navigation ul li.current-menu-item a:hover {
+    /* color: #007BFF; */
 }
 
 .ct-menu-search {
