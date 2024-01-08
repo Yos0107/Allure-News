@@ -222,6 +222,8 @@ if (!function_exists('allure_news_trending_news_item')) {
         global $allure_news_theme_options;
         $trending_cat = absint($allure_news_theme_options['allure-news-trending-news-category']);
         $trending_title = esc_html($allure_news_theme_options['allure-news-enable-trending-news-text']);
+        $speed_controller = $allure_news_theme_options[ 'allure-news-post-speed'];
+
         if (is_rtl()) {
             $marquee_class = 'trending-right';
         } else {
@@ -250,7 +252,7 @@ if (!function_exists('allure_news_trending_news_item')) {
                 <?php
                 endif;
                 ?>
-                <div class="trending-content <?php echo $marquee_class; ?>">
+                <div class="trending-content <?php echo $marquee_class; ?>" data-speed="<?php echo absint( $speed_controller ); ?>">
                     <?php
                     while ($query->have_posts()) :
                         $query->the_post();
