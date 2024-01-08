@@ -20,7 +20,7 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
             'allure-news-font-heading-family-url'=> 'Roboto:400,500,300,700,400italic',
 
             /*Logo Section Colors*/
-            'allure-news-logo-section-background' => '#333333',
+            'allure-news-logo-section-background' => '#3D3B40',
 
             /*logo position*/
             'allure-news-custom-logo-position'=> 'center',
