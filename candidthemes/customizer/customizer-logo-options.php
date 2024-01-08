@@ -14,7 +14,7 @@ $wp_customize->add_setting( 'allure_news_options[allure-news-custom-logo-positio
 ) );
 $wp_customize->add_control( 'allure_news_options[allure-news-custom-logo-position]', array(
    'choices' => array(
-    'default'    => __('Left Align','allure-news'),
+    'default'    => __('Left Logo','allure-news'),
     'center'    => __('Center Logo','allure-news')
 ),
    'label'     => __( 'Logo Position Option', 'allure-news' ),

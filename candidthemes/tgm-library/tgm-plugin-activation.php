@@ -2483,7 +2483,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 				$color = '';
 				if ( ! empty( $item['minimum_version'] ) && $this->tgmpa->does_plugin_require_update( $item['slug'] ) ) {
-					$color = ' color: #ff0000; font-weight: bold;';
+					$color = ' color: #007BFF; font-weight: bold;';
 				}
 
 				$output[] = sprintf(
