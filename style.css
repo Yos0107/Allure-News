@@ -1907,7 +1907,7 @@ blockquote {
 ##   Top Bar
 *   ----------------------------------------------------- */
 .top-bar {
-    background-color: #00ADB5;
+    background-color: #007BFF;
     width: 100%;
 }
 
@@ -2097,7 +2097,7 @@ blockquote {
 }
 
 .allure-news-social-top .allure-news-menu-social li a:hover:before {
-    color: #00ADB5;
+    color: #007BFF;
 }
 
 .allure-news-social-top .allure-news-menu-social li a:before {
@@ -2270,6 +2270,7 @@ blockquote {
 
 .search-icon-box:hover {
     cursor: pointer;
+    opacity: 0.7;
 }
 
 /*  Top Bar Search Form
@@ -2494,10 +2495,10 @@ blockquote {
     color: #fff;
 }
 
-.ct-menu-search .search-icon-box:hover {
-    background-color: #00ADB5;
+/* .ct-menu-search .search-icon-box:hover {
+    background-color:  #007BFF;
     border-radius: 5px;
-}
+} */
 
 @media screen and (min-width: 768px) {
     .main-navigation.center-aligned {
