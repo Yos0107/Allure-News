@@ -1948,7 +1948,6 @@ blockquote {
     overflow: hidden;
     position: relative;
     margin: 15px 0;
-    border: 1px solid #ddd;
     border-left: none;
     border-right: none;
 }
@@ -1987,7 +1986,7 @@ blockquote {
     float: left;
     padding: 0 20px;
     line-height: 45px;
-    border-left: 1px solid #ddd;
+    border-left: 1px solid #000;
 }
 
 .trending-content a span.img-marq img {
