@@ -62,6 +62,11 @@ jQuery(document).ready(function ($) {
     if ($('.ct-tabs').length > 0) {
         $(".ct-tabs").tabs();
     }
+
+    //Category Tabs
+    if ($('.cate-tabs').length > 0) {
+        $(".cate-tabs").tabs();
+    }
     // Initialize gototop button
     if ($('#toTop').length > 0) {
         // Hide the toTop button when the page loads.

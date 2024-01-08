@@ -139,3 +139,10 @@
          * Manage Breadcrumbs
         */
         require get_template_directory() . '/candidthemes/customizer/customizer-breadcrumb.php';
+
+        /**
+         * Load Tyopography Settings
+         *
+         * Manage Tyopography
+        */
+        require get_template_directory() . '/candidthemes/customizer/customizer-typograhpy.php';

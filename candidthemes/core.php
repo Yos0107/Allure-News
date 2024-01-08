@@ -77,6 +77,7 @@ require get_template_directory() . '/candidthemes/custom-widgets/candid-featured
 require get_template_directory() . '/candidthemes/custom-widgets/candid-social-widget.php';
 require get_template_directory() . '/candidthemes/custom-widgets/candid-post-slider-widget.php';
 require get_template_directory() . '/candidthemes/custom-widgets/candid-tabbed-widget.php';
+require get_template_directory() . '/candidthemes/custom-widgets/candid-category-tabbed-widget.php';
 require get_template_directory() . '/candidthemes/custom-widgets/candid-category-column-widget.php';
 require get_template_directory() . '/candidthemes/custom-widgets/candid-grid-post-widget.php';
 require get_template_directory() . '/candidthemes/custom-widgets/candid-advertisement-widget.php';

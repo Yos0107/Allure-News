@@ -8,11 +8,16 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
     function allure_news_default_theme_options_values() {
         $default_theme_options = array(
 
-             /*General Colors*/
+            /*General Colors*/
             'allure-news-primary-color' => '#00ADB5',
             'allure-news-site-title-hover'=> '',
             'allure-news-site-tagline'=> '',
             
+            /**
+             * Font Options
+             */
+            'allure-news-font-family-url'=> 'Poppins:400,500,600,700',
+            'allure-news-font-heading-family-url'=> 'Roboto:400,500,300,700,400italic',
 
             /*Logo Section Colors*/
             'allure-news-logo-section-background' => '#4240ed',
