@@ -775,7 +775,7 @@ a.ct-show-hide-top:focus {
 }
 
 .main-navigation ul ul a {
-    width: 200px;
+    /* width: 200px; */
 }
 
 .main-navigation ul li:hover>ul,
@@ -2431,6 +2431,12 @@ blockquote {
     box-shadow: none;
     text-align: left;
     border-radius: 5px;
+    width: 200px;
+    display: grid;
+}
+
+.main-navigation ul ul a {
+    display: inline-block;
 }
 
 .main-navigation ul ul li {
@@ -2453,6 +2459,10 @@ blockquote {
     font-size: 12px;
     margin-left: 7px;
     color: #ccc;
+}
+
+.navbar-nav>li.menu-item-has-children>a:hover:after {
+    content: "\f106";
 }
 
 .main-navigation li li a,
