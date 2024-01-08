@@ -1933,6 +1933,17 @@ blockquote {
     padding-bottom: 7px;
 }
 
+.top-bar .container-inner .ct-clock {
+    padding-left: 20px;
+}
+
+.top-bar .container-inner .ct-clock:before {
+    content: '\f133';
+    font-family: fontawesome;
+    position: absolute;
+    left: 30px;
+}
+
 .trending-wrapper {
     overflow: hidden;
     position: relative;
@@ -1952,6 +1963,7 @@ blockquote {
     top: 0;
     z-index: 3;
     color: #fff;
+    border-radius: 0 5px 5px 0;
 }
 
 .trending-content {
@@ -1975,10 +1987,12 @@ blockquote {
     float: left;
     padding: 0 20px;
     line-height: 45px;
+    border-left: 1px solid #ddd;
 }
 
 .trending-content a span.img-marq img {
     width: 45px;
+    border-radius: 5px;
 }
 
 .trending-content a span.img-marq {
@@ -2073,12 +2087,24 @@ blockquote {
     padding: 0;
     min-width: 20px;
     border-radius: 3px;
+    background-color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+.allure-news-social-top .allure-news-menu-social li a:hover {
+    background-color: #fff;
+}
+
+.allure-news-social-top .allure-news-menu-social li a:hover:before {
+    color: #00ADB5;
 }
 
 .allure-news-social-top .allure-news-menu-social li a:before {
     line-height: 1;
     font-size: 12px;
     line-height: 1.5;
+    color: #fff;
+    transition: 0.3s ease-in-out;
 }
 
 /*--------------------------------------------------------------
@@ -2238,11 +2264,11 @@ blockquote {
 .search-icon-box {
     float: right;
     margin-right: 10px;
+    transition: 0.3s ease-in-out;
 }
 
 .search-icon-box:hover {
     cursor: pointer;
-    opacity: 0.7;
 }
 
 /*  Top Bar Search Form
@@ -2403,7 +2429,7 @@ blockquote {
     border: 1px solid #ddd;
     box-shadow: none;
     text-align: left;
-
+    border-radius: 5px;
 }
 
 .main-navigation ul ul li {
@@ -2437,8 +2463,7 @@ blockquote {
 .main-navigation ul li.current-menu-item>a {
     background-color: #00ADB5;
     color: #fff;
-
-
+    border-radius: 5px;
 }
 
 .ct-menu-search {
@@ -2452,6 +2477,11 @@ blockquote {
     padding: 15px;
     margin: 0;
     color: #fff;
+}
+
+.ct-menu-search .search-icon-box:hover {
+    background-color: #00ADB5;
+    border-radius: 5px;
 }
 
 @media screen and (min-width: 768px) {
