@@ -17,7 +17,7 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
              * Font Options
              */
             'allure-news-font-family-url'=> 'Poppins:400,500,600,700',
-            'allure-news-font-heading-family-url'=> 'Roboto:400,500,300,700,400italic',
+            'allure-news-font-heading-family-url'=> 'Oswald:400,300,700',
 
             /*Logo Section Colors*/
             'allure-news-logo-section-background' => '#333333',
