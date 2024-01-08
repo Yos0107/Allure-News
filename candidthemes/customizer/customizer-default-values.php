@@ -40,6 +40,7 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
             'allure-news-enable-trending-news' => true,
             'allure-news-enable-trending-news-text'=> esc_html__('Trending News','allure-news'),
             'allure-news-trending-news-category'=> 0,
+            'allure-news-post-speed' => 10,
 
             /*Menu Section*/
             'allure-news-enable-menu-section-search'=> true,
