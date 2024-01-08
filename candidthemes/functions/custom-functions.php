@@ -413,3 +413,63 @@ if( !function_exists( 'allure_news_pagination_types' ) ) :
         return $pagination_types;
     }
 endif;
+
+/**
+ * Google Fonts
+ *
+ * @param null
+ * @return array
+ *
+ * @since allure_news 1.0.0
+ *
+ */
+if (!function_exists('allure_news_google_fonts')) :
+    function allure_news_google_fonts()
+    {
+        $allure_news_google_fonts = array(
+            'Libre+Baskerville' => 'Libre Baskerville',
+            'Merriweather:400,400italic,300,900,700' => 'Merriweather',
+            'Montserrat:400,700' => 'Montserrat',
+            'Muli:400,300italic,300' => 'Muli',
+            'Mulish:wght@300;400;500;600;700' => 'Mulish',
+            'Open+Sans:400,400italic,600,700' => 'Open Sans',
+            'Open+Sans+Condensed:300,300italic,700' => 'Open Sans Condensed',
+            'Oswald:400,300,700' => 'Oswald',
+            'Oxygen:400,300,700' => 'Oxygen',
+            'Poppins:400,500,600,700' => 'Poppins',
+            'Roboto:400,500,300,700,400italic' => 'Roboto',
+            'Voltaire' => 'Voltaire',
+            'Yanone+Kaffeesatz:400,300,700' => 'Yanone Kaffeesatz'
+        );
+        return apply_filters('allure_news_google_fonts', $allure_news_google_fonts);
+    }
+endif;
+
+/**
+ * Enqueue the list of fonts.
+ */
+function allure_news_customizer_fonts()
+{
+    wp_enqueue_style('allure_news_customizer_fonts', 'https://fonts.googleapis.com/css?family=Libre+Baskerville|Merriweather|Montserrat|Muli|Mulish|Open+Sans|Open+Sans+Condensed|Oswald|Oxygen|Poppins|Roboto|Voltaire|Yanone+Kaffeesatz', array(), null);
+}
+
+add_action('customize_controls_print_styles', 'allure_news_customizer_fonts');
+add_action('customize_preview_init', 'allure_news_customizer_fonts');
+
+add_action(
+    'customize_controls_print_styles',
+    function () {
+?>
+    <style>
+        <?php
+        $arr = array('Libre+Baskerville', 'Merriweather', 'Montserrat', 'Muli','Mulish', 'Open+Sans', 'Open+Sans+Condensed', 'Oswald', 'Oxygen', 'Poppins', 'Roboto', 'Voltaire', 'Yanone+Kaffeesatz');
+
+        foreach ($arr as $font) {
+            $font_family = str_replace("+", " ", $font);
+            echo '.customize-control select option[value*="' . $font . '"] {font-family: ' . $font_family . '; font-size: 22px;}';
+        }
+        ?>
+    </style>
+<?php
+    }
+);

@@ -4163,3 +4163,16 @@ body.admin-bar .ct-sticky {
 .allure-news-fontawesome-version-6 .allure-news-menu-social li a[href*="twitter.com"] {
     background-color: #0f1419;
 }
+
+/* CATEGORY TABS SECTION */
+
+.cate-tabs-nav {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+
+.cate-tabs-nav li.ui-state-active {
+    text-decoration: underline;
+    color: red;
+}

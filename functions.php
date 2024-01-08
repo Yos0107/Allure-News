@@ -233,8 +233,33 @@ function allure_news_scripts()
 
     /*google font  */
     global $allure_news_theme_options;
+    $allure_news_theme_options = allure_news_get_options_value();
+	$allure_news_google_fonts_name = allure_news_google_fonts();
+	$allure_news_body_fonts = '';
+	$allure_news_heading_fonts = '';
+	if (!empty($allure_news_theme_options['allure-news-font-family-url'])) {
+		$allure_news_body_fonts = esc_attr($allure_news_theme_options['allure-news-font-family-url']);
+	}
+	if (!empty($allure_news_theme_options['allure-news-font-heading-family-url'])) {
+		$allure_news_heading_fonts = esc_attr($allure_news_theme_options['allure-news-font-heading-family-url']);
+	}
 
-    wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css?family=Slabo+27px|Muli&display=swap');
+	$allure_news_google_fonts_enqueue = array(
+		$allure_news_body_fonts,
+		$allure_news_heading_fonts,
+	);
+	$allure_news_google_fonts_enqueue_uniques = array_unique($allure_news_google_fonts_enqueue);
+	
+	foreach ($allure_news_google_fonts_enqueue_uniques as $allure_news_google_fonts_enqueue_unique) {
+		wp_enqueue_style(
+			$allure_news_google_fonts_enqueue_unique,
+			'//fonts.googleapis.com/css?family=' . $allure_news_google_fonts_enqueue_unique . '',
+			array(),
+			''
+		);
+	}
+
+    // wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css?family=Slabo+27px|Muli&display=swap');
 
     /*Font-Awesome-master*/
     wp_enqueue_style('font-awesome-6', get_template_directory_uri() . '/candidthemes/assets/framework/font-awesome-6/css/all.min.css', array(), _S_VERSION);

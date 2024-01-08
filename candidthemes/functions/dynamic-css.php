@@ -114,6 +114,25 @@ if (!function_exists('allure_news_dynamic_css')) :
             }
         }
 
+        /* Paragraph Font Options */
+        $allure_news_google_fonts = allure_news_google_fonts();
+        if (!empty($allure_news_theme_options['allure-news-font-family-url'])) {
+            $allure_news_body_fonts = $allure_news_theme_options['allure-news-font-family-url'];
+            $allure_news_font_family = esc_attr($allure_news_google_fonts[$allure_news_body_fonts]);
+            if (!empty($allure_news_font_family)) {
+            $allure_news_custom_css .= "body, button, input, select, optgroup, textarea, .site-description { font-family: '{$allure_news_font_family}'; }";
+            }
+        }
+
+        /* Heading H1 Font Option */
+        if (!empty($allure_news_theme_options['allure-news-font-heading-family-url'])) {
+            $allure_news_heading_fonts = esc_attr($allure_news_theme_options['allure-news-font-heading-family-url']);
+            $allure_news_heading_font_family = $allure_news_google_fonts[$allure_news_heading_fonts];
+            if (!empty($allure_news_heading_font_family)) {
+                $allure_news_custom_css .= "h1, h2, h3, h4, h5, h6, .entry-content h1, .site-title a { font-family: '{$allure_news_heading_font_family}'; }";
+            }
+        }
+
         wp_add_inline_style('allure-news-style', $allure_news_custom_css);
     }
 endif;
