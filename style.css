@@ -775,7 +775,7 @@ a.ct-show-hide-top:focus {
 }
 
 .main-navigation ul ul a {
-    width: 200px;
+    /* width: 200px; */
 }
 
 .main-navigation ul li:hover>ul,
@@ -2431,6 +2431,12 @@ blockquote {
     box-shadow: none;
     text-align: left;
     border-radius: 5px;
+    width: 200px;
+    display: grid;
+}
+
+.main-navigation ul ul a {
+    display: inline-block;
 }
 
 .main-navigation ul ul li {
@@ -2455,6 +2461,10 @@ blockquote {
     color: #ccc;
 }
 
+.navbar-nav>li.menu-item-has-children>a:hover:after {
+    content: "\f106";
+}
+
 .main-navigation li li a,
 .main-navigation li li a:visited {
     color: #222
@@ -2464,21 +2474,26 @@ blockquote {
     position: relative;
 }
 
-.main-navigation ul li a:hover:before,
+.main-navigation ul li a:before,
 .main-navigation ul li.current-menu-item a:before {
     content: "";
     position: absolute;
-    width: 80%;
+    width: 0;
     height: 2px;
     top: 80%;
     left: 50%;
     transform: translate(-50%);
-    background-color: #fff;
+    background-color: #007BFF;
+    transition: width 0.3s ease-out;
+}
+
+.main-navigation ul li a:hover::before {
+    width: 80%;
 }
 
 .main-navigation ul li a:hover,
-.main-navigation ul li.current-menu-item>a {
-    color: #fff;
+.main-navigation ul li.current-menu-item a:hover {
+    /* color: #007BFF; */
 }
 
 .ct-menu-search {
