@@ -1907,7 +1907,7 @@ blockquote {
 ##   Top Bar
 *   ----------------------------------------------------- */
 .top-bar {
-    background-color: #007BFF;
+    background-color: #F63A3A;
     width: 100%;
 }
 
@@ -2096,7 +2096,7 @@ blockquote {
 }
 
 .allure-news-social-top .allure-news-menu-social li a:hover:before {
-    color: #007BFF;
+    color: #F63A3A;
 }
 
 .allure-news-social-top .allure-news-menu-social li a:before {
@@ -2492,7 +2492,7 @@ blockquote {
     top: 80%;
     left: 50%;
     transform: translate(-50%);
-    background-color: #007BFF;
+    background-color: #F63A3A;
     transition: width 0.3s ease-out;
 }
 
@@ -2502,7 +2502,7 @@ blockquote {
 
 .main-navigation ul li a:hover,
 .main-navigation ul li.current-menu-item a:hover {
-    /* color: #007BFF; */
+    /* color: #F63A3A; */
 }
 
 .ct-menu-search {
@@ -2519,7 +2519,7 @@ blockquote {
 }
 
 /* .ct-menu-search .search-icon-box:hover {
-    background-color:  #007BFF;
+    background-color:  #F63A3A;
     border-radius: 5px;
 } */
 
@@ -2672,6 +2672,7 @@ ul.ct-carousel {
     z-index: 1;
     width: auto;
     height: auto;
+    transition: 0.3s ease-in-out;
 }
 
 .ct-post-carousel .slick-next {
@@ -2680,25 +2681,27 @@ ul.ct-carousel {
     z-index: 1;
     width: auto;
     height: auto;
+    transition: 0.3s ease-in-out;
 }
 
 .ct-post-carousel .slick-next:before,
 .ct-post-carousel .slick-prev:before {
-    font-size: 50px;
+    font-size: 40px;
     font-family: FontAwesome;
-    color: rgba(0, 0, 0, 0.6);
+    color: #F63A3A;
     background: #fff;
     display: inline-block;
+    border-radius: 5px;
 }
 
 .ct-post-carousel .slick-prev:before {
     content: "\f104";
-    padding: 0 15px 0 10px;
+    padding: 5px 15px 5px 15px;
 }
 
 .ct-post-carousel .slick-next:before {
     content: "\f105";
-    padding: 0 10px 0 15px;
+    padding: 5px 15px 5px 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -4135,14 +4138,14 @@ div.breadcrumbs {
 *   ----------------------------------------------------- */
 .cat-links a {
     display: inline-block;
-    padding: 7px 9px;
+    padding: 8px 15px 8px 20px;
     margin-bottom: 5px;
     border-radius: 3px;
     color: #fff;
-    background-color: #007BFF;
-    background-size: 5% 100%;
+    background-color: #F63A3A;
+    background-size: 6% 100%;
     transition: 0.4s;
-    background-image: linear-gradient(#222121, #444);
+    background-image: linear-gradient(#222, #222);
     background-repeat: no-repeat;
     width: max-content;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);

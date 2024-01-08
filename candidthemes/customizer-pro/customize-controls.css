@@ -1,13 +1,14 @@
 #accordion-panel-allure-news_panel .accordion-section-title,
-#accordion-section-allure_news_about_theme_section .accordion-section-title{
-	margin-top:  -4px;
+#accordion-section-allure_news_about_theme_section .accordion-section-title {
+	margin-top: -4px;
 	font-weight: 400;
 	font-size: 16px;
-	background: #007BFF;
+	background: #F63A3A;
 	color: #fff;
 }
+
 .at-pro {
-	background: #007BFF!important;
-	color: #fff!important;
-	box-shadow: none!important;
+	background: #F63A3A !important;
+	color: #fff !important;
+	box-shadow: none !important;
 }
