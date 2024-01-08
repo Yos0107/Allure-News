@@ -1907,7 +1907,7 @@ blockquote {
 ##   Top Bar
 *   ----------------------------------------------------- */
 .top-bar {
-    background-color: #F63A3A;
+    background-color: #525CEB;
     width: 100%;
 }
 
@@ -2096,7 +2096,7 @@ blockquote {
 }
 
 .allure-news-social-top .allure-news-menu-social li a:hover:before {
-    color: #F63A3A;
+    color: #525CEB;
 }
 
 .allure-news-social-top .allure-news-menu-social li a:before {
@@ -2492,7 +2492,7 @@ blockquote {
     top: 80%;
     left: 50%;
     transform: translate(-50%);
-    background-color: #F63A3A;
+    background-color: #525CEB;
     transition: width 0.3s ease-out;
 }
 
@@ -2502,7 +2502,7 @@ blockquote {
 
 .main-navigation ul li a:hover,
 .main-navigation ul li.current-menu-item a:hover {
-    /* color: #F63A3A; */
+    /* color: #525CEB; */
 }
 
 .ct-menu-search {
@@ -2519,7 +2519,7 @@ blockquote {
 }
 
 /* .ct-menu-search .search-icon-box:hover {
-    background-color:  #F63A3A;
+    background-color:  #525CEB;
     border-radius: 5px;
 } */
 
@@ -2688,7 +2688,7 @@ ul.ct-carousel {
 .ct-post-carousel .slick-prev:before {
     font-size: 40px;
     font-family: FontAwesome;
-    color: #F63A3A;
+    color: #525CEB;
     background: #fff;
     display: inline-block;
     border-radius: 5px;
@@ -4142,7 +4142,7 @@ div.breadcrumbs {
     margin-bottom: 5px;
     border-radius: 3px;
     color: #fff;
-    background-color: #F63A3A;
+    background-color: #525CEB;
     background-size: 6% 100%;
     transition: 0.4s;
     background-image: linear-gradient(#222, #222);

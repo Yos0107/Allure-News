@@ -9,7 +9,7 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
         $default_theme_options = array(
 
             /*General Colors*/
-            'allure-news-primary-color' => '#F63A3A',
+            'allure-news-primary-color' => '#525CEB',
             'allure-news-site-title-hover'=> '',
             'allure-news-site-tagline'=> '',
             
