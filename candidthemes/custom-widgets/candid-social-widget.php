@@ -44,7 +44,7 @@ if (!class_exists('Allure_News_Social_Widget')) :
             echo $args['before_widget'];
 
             if (!empty($title)) {
-                echo $args['before_title'] . esc_html( $title ) . $args['after_title'];
+                echo $args['before_title'] . ( '<span>' .esc_html($title) .'</span>' ) . $args['after_title'];
             }
 
             if (has_nav_menu('social-menu')) {

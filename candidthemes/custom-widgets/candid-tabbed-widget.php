@@ -40,7 +40,7 @@ if (!class_exists('Allure_News_Tabbed_Post')) :
             echo $args['before_widget'];
 
             if (!empty($title)) {
-                echo $args['before_title'] . esc_html($title) . $args['after_title'];
+                echo $args['before_title'] . '<span>' .esc_html($title) .'</span>' . $args['after_title'];
             }
             $popular_title = !empty($instance['popular_title']) ? $instance['popular_title'] : '';
             $recent_title = !empty($instance['recent_title']) ? $instance['recent_title'] : '';
