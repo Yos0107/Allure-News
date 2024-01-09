@@ -4324,10 +4324,6 @@ body.admin-bar .ct-sticky {
     padding-top: 10px;
 }
 
-.allure-news-category-tabbed .allure-news-category-tabbed__excerpt {
-    display: none;
-}
-
 .allure-news-category-tabbed .featured-posts-block .list-post li .post-thumb img {
     max-height: 169px;
     object-fit: cover;

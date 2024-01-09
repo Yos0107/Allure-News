@@ -101,7 +101,7 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
             
             /**Preloader */
             'allure-news-preloader'=> true,
-            'allure-news-preloader-type'=> 'text',
+            'allure-news-preloader-type'=> 'spinning',
 
             /*Extra Options*/
             'allure-news-extra-breadcrumb'=> true,
