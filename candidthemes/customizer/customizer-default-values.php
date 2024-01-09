@@ -99,11 +99,13 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
             'allure-news-footer-copyright' =>  esc_html__('All Rights Reserved 2023.','allure-news'),
             'allure-news-go-to-top'=> true,
             
-            
+            /**Preloader */
+            'allure-news-preloader'=> true,
+            'allure-news-preloader-type'=> 'text',
+
             /*Extra Options*/
             'allure-news-extra-breadcrumb'=> true,
             'allure-news-breadcrumb-text'=>  esc_html__('You are Here','allure-news'),
-            'allure-news-extra-preloader'=> true,
             'allure-news-front-page-content' => false,
             'allure-news-extra-hide-read-time' => false,
             'allure-news-extra-post-formats-icons'=> true,

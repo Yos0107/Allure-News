@@ -3,6 +3,11 @@ jQuery(document).ready(function ($) {
         // hide preloader when everthing in the document load
         $('#loader-wrapper').css('display', 'none');
     }
+    
+    if ($('#preloader').length > 0) {
+        // hide preloader when everthing in the document load
+        $('#preloader').css('display', 'none');
+    }
 
     //Open Search form on search icon click
     if ($('.search-icon-box').length > 0) {

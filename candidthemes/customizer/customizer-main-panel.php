@@ -146,3 +146,10 @@
          * Manage Tyopography
         */
         require get_template_directory() . '/candidthemes/customizer/customizer-typograhpy.php';
+
+        /**
+         * Load Preloader Settings
+         *
+         * Manage Preloader
+        */
+        require get_template_directory() . '/candidthemes/customizer/customizer-preloader.php';
