@@ -39,7 +39,7 @@ if (!class_exists('Allure_News_Category_Tabbed_Post')) :
         echo $args['before_widget'];
 
         if (!empty($title)) {
-          echo $args['before_title'] . esc_html($title) . $args['after_title']; }
+          echo $args['before_title'] . ('<span>' .esc_html($title) .'</span>') . $args['after_title']; }
         $post_number = !empty($instance['post-number']) ? $instance['post-number'] : '';
         ?>
         <?php

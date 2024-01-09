@@ -58,7 +58,7 @@ if (!class_exists('Allure_News_Advertisement_Widget')) :
         <div class="advertisement_125x125">
             <?php if ( ! empty( $title ) ) { ?>
                 <div class="advertisement-title">
-                    <?php echo $before_title . esc_html( $title ) . $after_title; ?>
+                    <?php echo $before_title . '<span>' .esc_html($title) .'</span>' . $after_title; ?>
                 </div>
                 <?php
             }

@@ -49,10 +49,10 @@ if (!class_exists('Allure_News_Featured_Post')) :
                     echo $args['before_title'];
                     if (!empty($cat_id)) {
                         ?>
-                        <a href="<?php echo esc_url(get_category_link($cat_id)); ?>"> <?php echo esc_html($title); ?> </a>
+                        <a href="<?php echo esc_url(get_category_link($cat_id)); ?>"> <?php echo '<span>' .esc_html($title) .'</span>'; ?> </a>
                         <?php
                     } else {
-                        echo esc_html($title);
+                        echo '<span>' .esc_html($title) .'</span>';
                     }
                     echo $args['after_title'];
                     ?>
