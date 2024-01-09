@@ -4376,5 +4376,88 @@ body.admin-bar .ct-sticky {
 .allure-news-featured-post .ct-first-column .post-content.mt-10 {
     margin-top: 20px;
 }
-
+/* Preload 2 */
+#preloader {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 9999;
+}
+#preloader .load-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    text-align: center;
+    transition: all 0s;
+    font-size: 0;
+}
+#preloader .load-inner #load {
+    position: relative;
+    z-index: 1002;
+    top: auto;
+    left: auto;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: 0 0 !important;
+    width: auto;
+    height: auto;
+    max-width: 90vw;
+}
+.load-inner #load h2 {
+    margin: 0 0;
+    font-family: 'Roboto', sans-serif;
+    text-transform: inherit;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1;
+}
+#bg-load {
+    color: #BFCFE7 ;
+}
+#fg-load {
+    color: #525CEB ;
+    position: absolute;
+    top: 0px;
+    width: 0%;
+    overflow: hidden;
+    animation-name: leftToRight;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+}
+#fg-load span {
+    color: var(--primary-color);
+}
+@-webkit-keyframes leftToRight {
+    0% {
+        width: 1px;
+    }
+    95% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes leftToRight {
+    0% {
+        width: 1px;
+    }
+    95% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+}
 
