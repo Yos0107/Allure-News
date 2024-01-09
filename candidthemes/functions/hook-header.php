@@ -49,6 +49,15 @@ if (!function_exists('allure_news_preloader')) {
                 <div class="loader-section section-right"></div>
 
             </div>
+            <?php }elseif($allure_news_theme_options['allure-news-preloader-type'] == 'text'){ ?>
+                <div id="preloader">
+                    <div class="load-inner">
+                        <div id="load">
+                            <h2 id="bg-load">Loading</h2>
+                            <h2 id="fg-load">Loading</h2>
+                        </div>
+                    </div>
+                </div>
             <?php }else{ ?>
                 <div id="preloader">
                     <div class="load-inner">

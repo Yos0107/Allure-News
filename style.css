@@ -3663,7 +3663,7 @@ div.breadcrumbs {
 .list-post .post-block-style .post-content {
     -ms-flex: 1;
     flex: 1;
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .list-post .post-block-style .post-thumb {
@@ -3941,7 +3941,7 @@ div.breadcrumbs {
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #3498db;
+    border-top-color: #525CEB;
 
     -webkit-animation: spin 2s linear infinite;
     /* Chrome, Opera 15+, Safari 5+ */
@@ -3960,7 +3960,7 @@ div.breadcrumbs {
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #e74c3c;
+    border-top-color: #cce464 ;
 
     -webkit-animation: spin 3s linear infinite;
     /* Chrome, Opera 15+, Safari 5+ */
@@ -3977,7 +3977,7 @@ div.breadcrumbs {
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #f9c922;
+    border-top-color: #F8EDFF;
 
     -webkit-animation: spin 1.5s linear infinite;
     /* Chrome, Opera 15+, Safari 5+ */
@@ -4415,7 +4415,7 @@ body.admin-bar .ct-sticky {
 }
 .load-inner #load h2 {
     margin: 0 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     text-transform: inherit;
     font-size: 44px;
     font-weight: 700;
@@ -4431,7 +4431,7 @@ body.admin-bar .ct-sticky {
     width: 0%;
     overflow: hidden;
     animation-name: leftToRight;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     white-space: nowrap;
 }

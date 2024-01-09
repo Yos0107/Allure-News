@@ -54,8 +54,9 @@ $wp_customize->add_setting( 'allure_news_options[allure-news-preloader-type]', a
 ) );
 $wp_customize->add_control( 'allure_news_options[allure-news-preloader-type]', array(
    'choices' => array(
-    'spinning'    => __('Spinning Animation','allure-news'),
-    'text'    => __('Text Animation','allure-news')
+    'spinning'    => __('Spinning Icon','allure-news'),
+    'text'    => __('Text Loading','allure-news'),
+    'dots'    => __('Dots Loading','allure-news')
 ),
   'label'     => __( 'Preloader Type', 'allure-news' ),
   'description' => __('Select the preloader type.', 'allure-news'),
