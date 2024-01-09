@@ -102,6 +102,9 @@ if (!class_exists('Allure_News_Category_Tabbed_Post')) :
                                             <div class="post-meta">
                                                 <?php allure_news_posted_on(); ?>
                                             </div>
+                                            <div class="allure-news-category-tabbed__excerpt">
+                                              <?php echo wp_trim_words(get_the_content(), 25); ?>
+                                            </div> 
                                     </div>
                                 </div>
                             </li>
