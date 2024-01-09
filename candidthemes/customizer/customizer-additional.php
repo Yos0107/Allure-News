@@ -7,28 +7,13 @@
  */
 /*Extra Options*/
 $wp_customize->add_section( 'allure_news_extra_options', array(
-    'priority'       => 75,
+    'priority'       => 80,
     'capability'     => 'edit_theme_options',
     'theme_supports' => '',
     'title'          => __( 'Extra Options', 'allure-news' ),
     'panel'          => 'allure_news_panel',
 ) );
 
-/*Preloader Enable*/
-$wp_customize->add_setting( 'allure_news_options[allure-news-extra-preloader]', array(
-    'capability'        => 'edit_theme_options',
-    'transport' => 'refresh',
-    'default'           => $default['allure-news-extra-preloader'],
-    'sanitize_callback' => 'allure_news_sanitize_checkbox'
-) );
-$wp_customize->add_control( 'allure_news_options[allure-news-extra-preloader]', array(
-    'label'     => __( 'Enable Preloader', 'allure-news' ),
-    'description' => __( 'It will enable the preloader on the website.', 'allure-news' ),
-    'section'   => 'allure_news_extra_options',
-    'settings'  => 'allure_news_options[allure-news-extra-preloader]',
-    'type'      => 'checkbox',
-    'priority'  => 15,
-) );
 
 /*Home Page Content*/
 $wp_customize->add_setting( 'allure_news_options[allure-news-front-page-content]', array(

@@ -47,7 +47,7 @@ if (!function_exists('allure_news_dynamic_css')) :
             $allure_news_primary_color = esc_attr($allure_news_theme_options['allure-news-primary-color']);
 
             //font-color
-            $allure_news_custom_css .= ".entry-content a, .entry-title a:hover, .related-title a:hover, .posts-navigation .nav-previous a:hover, .post-navigation .nav-previous a:hover, .posts-navigation .nav-next a:hover, .post-navigation .nav-next a:hover, #comments .comment-content a:hover, #comments .comment-author a:hover, .offcanvas-menu nav ul.top-menu li a:hover, .offcanvas-menu nav ul.top-menu li.current-menu-item > a, .error-404-title, #allure-news-breadcrumbs a:hover, .entry-content a.read-more-text:hover, a:hover, a:visited:hover, .widget_allure_news_category_tabbed_widget.widget ul.ct-nav-tabs li a  { color : {$allure_news_primary_color}; }";
+            $allure_news_custom_css .= ".entry-content a, .entry-title a:hover, .related-title a:hover, .posts-navigation .nav-previous a:hover, .post-navigation .nav-previous a:hover, .posts-navigation .nav-next a:hover, .post-navigation .nav-next a:hover, #comments .comment-content a:hover, #comments .comment-author a:hover, .offcanvas-menu nav ul.top-menu li a:hover, .offcanvas-menu nav ul.top-menu li.current-menu-item > a, .error-404-title, #allure-news-breadcrumbs a:hover, .entry-content a.read-more-text:hover, a:hover, a:visited:hover, .widget_allure_news_category_tabbed_widget.widget ul.ct-nav-tabs li a, #fg-load  { color : {$allure_news_primary_color}; }";
 
             //background-color
             $allure_news_custom_css .= ".candid-allure-post-format, .allure-news-featured-block .allure-news-col-2 .candid-allure-post-format, .top-bar, .trending-title, .search-form input[type=submit], input[type=\"submit\"], ::selection, #toTop, .breadcrumbs span.breadcrumb, article.sticky .allure-news-content-container, .candid-pagination .page-numbers.current, .candid-pagination .page-numbers:hover, .ct-title-head, .widget-title:before, .widget ul.ct-nav-tabs:before, .widget ul.ct-nav-tabs li.ct-title-head:hover, .widget ul.ct-nav-tabs li.ct-title-head.ui-tabs-active { background-color : {$allure_news_primary_color}; }";
@@ -146,7 +146,7 @@ if (!function_exists('allure_news_dynamic_css')) :
             $allure_news_body_fonts = $allure_news_theme_options['allure-news-font-family-url'];
             $allure_news_font_family = esc_attr($allure_news_google_fonts[$allure_news_body_fonts]);
             if (!empty($allure_news_font_family)) {
-            $allure_news_custom_css .= "body, button, input, select, optgroup, textarea, .site-description { font-family: '{$allure_news_font_family}'; }";
+            $allure_news_custom_css .= "body, button, input, select, optgroup, textarea, .site-description, .load-inner #load h2 { font-family: '{$allure_news_font_family}'; }";
             }
         }
 

@@ -38,8 +38,9 @@ if (!function_exists('allure_news_preloader')) {
 
 
         //Check if preloader is enabled from customizer
-        if ($allure_news_theme_options['allure-news-extra-preloader'] == 1) :
+        if ($allure_news_theme_options['allure-news-preloader'] == 1) :
             ?>
+            <?php if($allure_news_theme_options['allure-news-preloader-type'] == 'spinning'){ ?>
             <!-- Preloader -->
             <div id="loader-wrapper">
                 <div id="loader"></div>
@@ -48,6 +49,25 @@ if (!function_exists('allure_news_preloader')) {
                 <div class="loader-section section-right"></div>
 
             </div>
+            <?php }elseif($allure_news_theme_options['allure-news-preloader-type'] == 'text'){ ?>
+                <div id="preloader">
+                    <div class="load-inner">
+                        <div id="load">
+                            <h2 id="bg-load">Loading</h2>
+                            <h2 id="fg-load">Loading</h2>
+                        </div>
+                    </div>
+                </div>
+            <?php }else{ ?>
+                <div id="preloader">
+                    <div class="load-inner">
+                        <div id="load">
+                            <h2 id="bg-load">....<span>.</span></h2>
+                            <h2 id="fg-load">....<span>.</span></h2>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
         <?php
         endif;
 
