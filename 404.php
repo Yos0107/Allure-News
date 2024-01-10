@@ -20,7 +20,7 @@ get_header();
                 </header><!-- .page-header -->
 
                 <div class="page-content">
-                    <p><?php esc_html_e('It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'allure-news'); ?></p>
+                    <p><?php esc_html_e('Sorry but we couldn"t find the page you are looking for. It might have been moved or deleted. Perhaps searching can help.', 'allure-news'); ?></p>
 
                     <?php
                     get_search_form();
