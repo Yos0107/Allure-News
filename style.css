@@ -1465,13 +1465,13 @@ blockquote {
     .container-inner #primary {
         width: 70%;
         float: left;
-        padding-right: 15px;
+        padding-right: 25px;
     }
 
     .container-inner #secondary {
         width: 30%;
         float: right;
-        padding-left: 15px;
+        padding-left: 25px;
     }
 
     .left-sidebar .container-inner #primary {
@@ -1523,7 +1523,7 @@ blockquote {
     .ct-below-featured-area .ct-two-cols:nth-child(2n+1),
     .ct-above-footer .ct-two-cols:nth-child(2n+1),
     .ct-video-grid-post .ct-video-list:nth-child(5n+1) {
-        padding-right: 10px;
+        padding-right: 15px;
         clear: left;
     }
 
@@ -1532,7 +1532,7 @@ blockquote {
     .ct-below-featured-area .ct-two-cols:nth-child(2n+2),
     .ct-above-footer .ct-two-cols:nth-child(2n+2),
     .ct-video-grid-post .ct-video-list:nth-child(5n+2) {
-        padding-left: 10px;
+        padding-left: 15px;
     }
 
     #primary article.three-columns,
@@ -1552,7 +1552,7 @@ blockquote {
     .ct-below-featured-area .ct-three-cols:nth-child(3n+1),
     .ct-above-footer .ct-three-cols:nth-child(3n+1),
     .ct-video-grid-post .ct-video-list:nth-child(5n+3) {
-        padding-right: 20px;
+        padding-right: 30px;
         clear: left;
     }
 
@@ -1570,7 +1570,7 @@ blockquote {
     .ct-below-featured-area .ct-three-cols:nth-child(3n+3),
     .ct-above-footer .ct-three-cols:nth-child(3n+3),
     .ct-video-grid-post .ct-video-list:nth-child(5n+5) {
-        padding-left: 20px;
+        padding-left: 30px;
     }
 
     #secondary .ct-video-grid-post .ct-video-list {
@@ -2088,7 +2088,7 @@ blockquote {
     margin-right: 0;
     padding: 0;
     width: 30px;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: #000;
     transition: 0.3s ease-in-out;
 }
@@ -2865,6 +2865,10 @@ Post Content
     margin-bottom: 30px;
 }
 
+#secondary .sidebar-widget-container:last-child {
+    margin-bottom: 0;
+}
+
 .wp-block-heading {
     font-size: 24px;
 }
@@ -3305,18 +3309,27 @@ a .ct-title-head.ct-rotate:hover,
     background: #fff;
 }
 
+.related-pots-block .related-post-entries {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    margin-top: 20px;
+}
+
 @media screen and (min-width: 768px) {
 
     .related-post-entries li {
         float: left;
-        width: 31%;
-        margin-left: 3.5%;
+        width: 100%;
+        margin-left: 0;
     }
 
     .related-post-entries li:nth-child(3n+1) {
         clear: left;
         margin-left: 0;
     }
+
+
 }
 
 /*--------------------------------------------------------------
@@ -3437,13 +3450,14 @@ footer .site-info {
 #toTop {
     display: block;
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 20px;
+    right: 20px;
     padding: 3px 13px;
     color: #fff;
     font-size: 20px;
     background-color: #000;
-    border-radius: 3px;
+    border-radius: 5px;
+    border: 1px solid #fff;
 }
 
 #toTop:hover {
@@ -3853,8 +3867,12 @@ div.breadcrumbs {
     width: 100%;
 }
 
+.slick-current.slick-active .allure-news-col .post-thumb {
+    min-height: 415px;
+}
+
 .allure-news-col .post-thumb img {
-    height: 406px;
+    height: 430px;
     object-fit: cover;
 }
 
@@ -3884,11 +3902,11 @@ div.breadcrumbs {
     }
 
     .allure-news-featured-block .allure-news-col:last-child {
-        padding-left: 20px;
+        padding-left: 30px;
     }
 
     .allure-news-featured-block .allure-news-col-2 .allure-news-col {
-        padding: 10px;
+        padding: 15px;
     }
 
     .allure-news-featured-block .allure-news-col-2 .allure-news-col:nth-child(1) {
@@ -3909,6 +3927,7 @@ div.breadcrumbs {
     .allure-news-featured-block .allure-news-col-2 .allure-news-col:nth-child(1) {
         padding-right: 0;
     }
+
 
 }
 
@@ -4328,7 +4347,7 @@ body.admin-bar .ct-sticky {
 .allure-news-category-tabbed .featured-posts-block .list-post {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 30px;
 }
 
 .widget ul.list-post li {
@@ -4446,7 +4465,7 @@ body.admin-bar .ct-sticky {
 /* SIDBAR AUTHOR SECTION*/
 
 .allure_news_widget_author ul.menu a {
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .allure_news_widget_author ul.menu a:hover {
@@ -4458,7 +4477,7 @@ body.admin-bar .ct-sticky {
 
 .widget_search .wp-block-search__button {
     background-color: #000;
-    border-radius: 3px;
+    border-radius: 5px;
     transition: 0.3s ease-in-out;
 }
 
@@ -4467,5 +4486,110 @@ body.admin-bar .ct-sticky {
 }
 
 .widget_search .wp-block-search__input {
-    border-radius: 3px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 991.98px) {
+
+    /* RESPONSIVE OFR CATEGORY TABBED  */
+
+    .container-inner #primary {
+        padding-right: 15px;
+    }
+
+    .container-inner #secondary {
+        padding-left: 15px;
+    }
+
+    .allure-news-category-tabbed .featured-posts-block .list-post {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .allure-news-featured-block .allure-news-col {
+        margin-bottom: 30px;
+    }
+
+    .allure-news-featured-block .allure-news-col:last-child {
+        margin-bottom: 0px;
+    }
+
+    .allure-news-featured-block .allure-news-col.allure-news-col-2 {
+        margin-bottom: 0;
+    }
+
+    .allure-news-col-2 .post-thumb img {
+        height: 300px;
+    }
+
+    .allure-news-category-tabbed .featured-posts-block .list-post {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .allure-news-category-tabbed .featured-posts-block .list-post li:nth-child(3) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .allure-news-category-tabbed .featured-posts-block .list-post li:nth-child(3) .post-thumb img {
+        min-height: 250px;
+    }
+
+    .allure-news-category-tabbed .featured-posts-block .list-post li .post-thumb img {
+        max-height: 250px;
+    }
+
+    .entry-title {
+        font-size: 30px;
+    }
+
+    .ct-grid-post-list .post-title {
+        font-size: 24px;
+    }
+
+    /* RELATED POST  */
+
+    .related-pots-block .related-post-entries {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* FOOTER  */
+
+    body.right-sidebar #secondary {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 575.98px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .allure-news-category-tabbed .featured-posts-block .list-post {
+        grid-template-columns: 1fr;
+    }
+
+    .entry-title {
+        font-size: 24px;
+    }
+
+    /* RELATED POST  */
+
+    .related-pots-block .related-post-entries {
+        grid-template-columns: 1fr;
+    }
+
+    .related-post-entries img {
+        width: 100%;
+    }
+
+
 }
