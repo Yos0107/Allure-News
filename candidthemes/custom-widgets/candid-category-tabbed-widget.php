@@ -84,6 +84,9 @@ if (!class_exists('Allure_News_Category_Tabbed_Post')) :
                                     if (has_post_thumbnail()) {
                                         ?>
                                         <div class="post-thumb">
+                                        <?php
+                                        allure_news_post_formats(get_the_ID());
+                                        ?>
                                             <a href="<?php the_permalink(); ?>">
                                                 <?php the_post_thumbnail('thumbnail'); ?>
                                             </a>
@@ -100,7 +103,10 @@ if (!class_exists('Allure_News_Category_Tabbed_Post')) :
                                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                         </h3>
                                             <div class="post-meta">
-                                                <?php allure_news_posted_on(); ?>
+                                                <?php 
+                                                  allure_news_posted_on(); 
+                                                  allure_news_read_time_words_count(get_the_ID());
+                                                ?>
                                             </div>
                                     </div>
                                 </div>

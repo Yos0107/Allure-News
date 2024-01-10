@@ -121,9 +121,7 @@ if (!class_exists('Allure_News_Thumb_Posts')) :
                                             <div class="post-meta">
                                                 <?php
                                                 allure_news_posted_on();
-                                                if ($hide_read_time != 1) {
-                                                    allure_news_read_time_words_count(get_the_ID());
-                                                }
+                                                allure_news_read_time_words_count(get_the_ID());
 
                                                 ?>
                                             </div>

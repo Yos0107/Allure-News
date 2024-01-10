@@ -1,11 +1,10 @@
 jQuery(document).ready(function($) {
-    var at_document = jquery(document);
-    var media_image_upload;
+    var at_document = $(document);
     at_document.on('click','.custom_media_button', function(e){
 
         // Prevents the default action from occuring.
         e.preventDefault();
-        media_image_upload = $(this);
+        var media_image_upload = $(this);
         var media_title = $(this).data('title');
         var media_button = $(this).data('button');
         var media_input_val = $(this).prev();
