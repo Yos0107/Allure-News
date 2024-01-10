@@ -630,6 +630,7 @@ input[type="submit"] {
     background: #e6e6e6;
     color: #fff;
     padding: 5px 15px;
+    border-radius: 3px;
 }
 
 button:hover,
@@ -2864,6 +2865,10 @@ Post Content
     margin-bottom: 30px;
 }
 
+.wp-block-heading {
+    font-size: 24px;
+}
+
 #secondary .widget {
     margin-bottom: 0;
 }
@@ -3503,6 +3508,7 @@ div.breadcrumbs {
     margin-right: 9px;
     padding: 1px 10px 1px 10px;
     color: #fff;
+    border-radius: 3px;
 }
 
 /*---------------------------------------------------
