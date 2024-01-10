@@ -42,7 +42,7 @@ if (!function_exists('allure_news_related_post')) :
                     if (!empty($allure_news_related_post_title)):
                         ?>
                         <h2 class="widget-title">
-                            <?php echo $allure_news_related_post_title; ?>
+                            <?php echo '<span>' .($allure_news_related_post_title) .'</span>'; ?>
                         </h2>
                     <?php
                     endif;
