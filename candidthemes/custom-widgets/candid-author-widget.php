@@ -69,7 +69,7 @@ if (!class_exists('Allure_News_Author_Widget')) :
                 <?php
 
                 if ($title) {
-                    echo $args['before_title'] . esc_html( $title ) . $args['after_title'];
+                    echo $args['before_title'] . '<span>' .esc_html($title) .'</span>' . $args['after_title'];
                 } ?>
 
                 <div class="profile-wrapper social-menu-wrap">

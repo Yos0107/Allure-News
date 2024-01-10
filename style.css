@@ -1637,13 +1637,13 @@ blockquote {
     border: medium none;
     display: table-cell;
     font-weight: normal;
-    height: 50px;
+    height: 40px;
+    width: 40px;
     line-height: 1;
     margin-right: 5px;
     padding: 0;
     text-align: center;
     vertical-align: middle;
-    width: 50px;
     overflow: hidden;
     font-size: 0;
 }
@@ -1688,7 +1688,7 @@ blockquote {
 
 .allure-news-menu-social li a[href*="facebook.com"],
 .meta_bottom .post-share a[href*="facebook.com"] {
-    background-color: #45619d;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="weibo.com"]:before {
@@ -1697,7 +1697,7 @@ blockquote {
 
 .allure-news-menu-social li a[href*="weibo.com"],
 .meta_bottom .post-share a[href*="weibo.com"] {
-    background-color: #DF2029;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="twitter.com"]:before,
@@ -1707,7 +1707,7 @@ blockquote {
 
 .allure-news-menu-social li a[href*="twitter.com"],
 .meta_bottom .post-share a[href*="twitter.com"] {
-    background-color: #525CEB;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="linkedin.com"]:before {
@@ -1716,7 +1716,7 @@ blockquote {
 
 .allure-news-menu-social li a[href*="linkedin.com"],
 .meta_bottom .post-share a[href*="linkedin.com"] {
-    background-color: #525CEB;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="plus.google.com"]:before {
@@ -1724,7 +1724,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="plus.google.com"] {
-    background-color: #df4b38;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="youtube.com"]:before {
@@ -1732,7 +1732,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="youtube.com"] {
-    background-color: #e82707;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="dribbble.com"]:before {
@@ -1740,7 +1740,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="dribbble.com"] {
-    background-color: #c42462;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="pinterest.com"]:before {
@@ -1749,7 +1749,7 @@ blockquote {
 
 .allure-news-menu-social li a[href*="pinterest.com"],
 .meta_bottom .post-share a[href*="pinterest.com"] {
-    background-color: #ca1f26;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="bitbucket.org"]:before {
@@ -1757,7 +1757,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="bitbucket.org"] {
-    background-color: #205081;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="github.com"]:before {
@@ -1781,7 +1781,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="flickr.com"] {
-    background-color: #0063db;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href$="/feed/"]:before {
@@ -1793,7 +1793,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="foursquare.com"] {
-    background-color: #f94877;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="instagram.com"]:before {
@@ -1801,7 +1801,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="instagram.com"] {
-    background-color: #525CEB;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="tumblr.com"]:before {
@@ -1931,6 +1931,8 @@ blockquote {
 .top-bar .container-inner {
     padding-top: 7px;
     padding-bottom: 7px;
+    display: flex;
+    align-items: center;
 }
 
 .top-bar .container-inner .ct-clock {
@@ -2080,11 +2082,11 @@ blockquote {
 .allure-news-social-top .allure-news-menu-social li a {
     text-decoration: none;
     line-height: 1;
-    height: auto;
+    height: 30px;
     width: auto;
     margin-right: 0;
     padding: 0;
-    min-width: 20px;
+    width: 30px;
     border-radius: 3px;
     background-color: #000;
     transition: 0.3s ease-in-out;
@@ -2101,7 +2103,7 @@ blockquote {
 
 .allure-news-social-top .allure-news-menu-social li a:before {
     line-height: 1;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.5;
     color: #fff;
     transition: 0.3s ease-in-out;
@@ -2627,7 +2629,8 @@ ul.ct-carousel {
     text-align: center;
     background: rgba(255, 255, 255, 0.6);
     padding: 25px 35px;
-    transition: background-color 0.5s ease;
+    transition: background-color 0 .5s ease;
+    border-radius: 10px;
 }
 
 .carousel-thumbnail-block .slide-details {
@@ -2914,7 +2917,7 @@ Post Content
 }
 
 .widget ul.ct-nav-tabs li.ct-title-head {
-    background: #666;
+    background: #000;
     line-height: 1;
 }
 
@@ -3205,6 +3208,7 @@ a .ct-title-head.ct-rotate:hover,
     margin-bottom: 10px;
     display: inline-block;
     background-color: #fff;
+    border-radius: 3px;
 }
 
 .candid-pagination .page-numbers.current,
@@ -3430,14 +3434,15 @@ footer .site-info {
     position: fixed;
     bottom: 0;
     right: 0;
-    padding: 5px 15px;
+    padding: 3px 13px;
     color: #fff;
     font-size: 20px;
-    opacity: 0.7;
+    background-color: #000;
+    border-radius: 3px;
 }
 
 #toTop:hover {
-    opacity: 1;
+    background-color: #525CEB;
 }
 
 /*---------------------------------------------------
@@ -3813,6 +3818,7 @@ div.breadcrumbs {
     display: inline-block;
     padding: 0;
     color: #fff;
+    border-radius: 3px;
 }
 
 .widget ul.ct-nav-tabs li a {
@@ -4410,6 +4416,11 @@ body.admin-bar .ct-sticky {
     border-radius: 5px;
 }
 
+.menu-social-menu-container .social-menu a:hover {
+    background-color: #525CEB;
+    opacity: 1;
+}
+
 /* NEWS TABBED SECTION */
 
 .allure-news-tabbed .post-block-style {
@@ -4424,4 +4435,31 @@ body.admin-bar .ct-sticky {
 .allure-news-tabbed .list-post-block ul.list-post {
     display: grid;
     gap: 15px;
+}
+
+/* SIDBAR AUTHOR SECTION*/
+
+.allure_news_widget_author ul.menu a {
+    border-radius: 3px;
+}
+
+.allure_news_widget_author ul.menu a:hover {
+    background-color: #525CEB;
+    opacity: 1;
+}
+
+/*SIDBAR SEARCH SECTION*/
+
+.widget_search .wp-block-search__button {
+    background-color: #000;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+.widget_search .wp-block-search__button:hover {
+    background-color: #525CEB;
+}
+
+.widget_search .wp-block-search__input {
+    border-radius: 3px;
 }

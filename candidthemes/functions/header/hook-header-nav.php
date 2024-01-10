@@ -49,7 +49,7 @@ if (!function_exists('allure_news_construct_main_navigation')) {
 
                             ?>
                             <li class="<?php echo $home_class; ?>"><a href="<?php echo esc_url(home_url('/')); ?>">
-                                    <i class="fa fa-home"></i> </a></li>
+                                <i class="fa-solid fa-house-chimney"></i> </a></li>
                         <?php
                         endif;
                         ?>
