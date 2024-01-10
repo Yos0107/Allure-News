@@ -43,11 +43,6 @@ if (!class_exists('Allure_News_Category_Column')) {
             $cat2_class = 'cat-' . $cat_id_2;
 
             echo $args['before_widget'];
-            global $allure_news_theme_options;
-            $hide_read_time = 0;
-            if(!empty($allure_news_theme_options['allure-news-extra-hide-read-time'])){
-                $hide_read_time = $allure_news_theme_options['allure-news-extra-hide-read-time'];
-            }
 
             ?>
             <div class="block ct-cat-cols">
@@ -57,10 +52,10 @@ if (!class_exists('Allure_News_Category_Column')) {
                         <?php
                         if ($cat_id_1) {
                             ?>
-                            <h2 class="widget-title <?php echo $cat1_class; ?>">
+                            <h2 class="widget-title <?php echo '<span>' .$cat1_class .'</span>'; ?>">
                                 <a href="<?php echo esc_url(get_category_link($cat_id_1)); ?>">
 
-                                        <?php echo esc_html(get_cat_name($cat_id_1)); ?>
+                                    <?php echo ('<span>'.get_cat_name($cat_id_1). '</span>'); ?>
 
                                 </a>
                             </h2>
@@ -90,9 +85,6 @@ if (!class_exists('Allure_News_Category_Column')) {
                                         ?>
 
                                         <div class="post-thumb">
-                                            <?php
-                                            allure_news_post_formats(get_the_ID());
-                                            ?>
                                             <a href="<?php the_permalink(); ?>">
                                                 <?php the_post_thumbnail('allure-news-carousel-img'); ?>
                                             </a>
@@ -107,7 +99,7 @@ if (!class_exists('Allure_News_Category_Column')) {
                                             ?>
                                             <a href="<?php the_permalink(); ?>">
                                                 <img src="<?php echo esc_url(get_template_directory_uri()) . '/candidthemes/assets/images/allure-new-carousel.jpg' ?>"
-                                                     alt="<?php the_title(); ?>">
+                                                    alt="<?php the_title(); ?>">
 
                                             </a>
                                         </div>
@@ -126,13 +118,12 @@ if (!class_exists('Allure_News_Category_Column')) {
                                             <div class="post-meta">
                                                 <?php
                                                 
-                                                    allure_news_posted_on();
+                                                allure_news_posted_on();
                                                 
-                                                if ($hide_read_time != 1){
-                                                    allure_news_read_time_words_count(get_the_ID());
-                                                }
-
+                                                allure_news_read_time_words_count(get_the_ID());
+                                            
                                                 ?>
+                                                <span><?php ?></span>
                                             </div>
                                     </div><!-- Post content end -->
 
@@ -186,9 +177,7 @@ if (!class_exists('Allure_News_Category_Column')) {
                                                             <?php
                                                                 allure_news_posted_on();
                                                             
-                                                            if ($hide_read_time != 1){
                                                                 allure_news_read_time_words_count(get_the_ID());
-                                                            }
 
                                                             ?>
                                                         </div>
@@ -214,8 +203,7 @@ if (!class_exists('Allure_News_Category_Column')) {
                             ?>
                             <h2 class="widget-title <?php echo $cat2_class; ?>">
                                 <a href="<?php echo esc_url(get_category_link($cat_id_2)); ?>">
-                                    <?php echo esc_html(get_cat_name($cat_id_2)); ?>
-
+                                    <?php echo ('<span>'.(get_cat_name($cat_id_2)). '</span>'); ?>
                                 </a>
 
                             </h2>
@@ -286,9 +274,7 @@ if (!class_exists('Allure_News_Category_Column')) {
                                                 <?php
                                                     allure_news_posted_on();
                                                 
-                                                if ($hide_read_time != 1){
                                                     allure_news_read_time_words_count(get_the_ID());
-                                                }
 
                                                 ?>
                                             </div>
@@ -343,10 +329,8 @@ if (!class_exists('Allure_News_Category_Column')) {
                                                         <div class="post-meta">
                                                             <?php
                                                                 allure_news_posted_on();
-                                                            
-                                                            if ($hide_read_time != 1){
+                                                                                                                    
                                                                 allure_news_read_time_words_count(get_the_ID());
-                                                            }
 
                                                             ?>
                                                         </div>

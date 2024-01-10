@@ -61,11 +61,6 @@ if (!class_exists('Allure_News_Featured_Post')) :
             }
 
             $post_number = !empty($instance['post-number']) ? $instance['post-number'] : 5;
-            global $allure_news_theme_options;
-            $hide_read_time = 0;
-            if(!empty( $allure_news_theme_options['allure-news-extra-hide-read-time'] )){
-                $hide_read_time = $allure_news_theme_options['allure-news-extra-hide-read-time'];
-            }
 
             $query_args = array(
                 'post_type' => 'post',
@@ -132,9 +127,9 @@ if (!class_exists('Allure_News_Featured_Post')) :
                                             <div class="post-meta">
                                                 <?php
                                                     allure_news_posted_on();
-                                                if ($hide_read_time != 1) {
+                                                
                                                     allure_news_read_time_words_count(get_the_ID());
-                                                }
+                                                
 
                                                 ?>
                                             </div>
@@ -192,9 +187,7 @@ if (!class_exists('Allure_News_Featured_Post')) :
                                             <div class="post-meta">
                                                 <?php
                                                     allure_news_posted_on();
-                                                if ($hide_read_time != 1) {
                                                     allure_news_read_time_words_count(get_the_ID());
-                                                }
 
                                                 ?>
                                             </div>

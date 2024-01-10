@@ -365,6 +365,7 @@ if (!function_exists('allure_news_read_time')) :
     {
         global $allure_news_theme_options;
         $content = apply_filters('the_content', get_post_field('post_content', $post_id));
+        $hide_read_time = absint($allure_news_theme_options['allure-news-extra-hide-read-time']);
         $read_words = 200;
         $decode_content = html_entity_decode($content);
         $filter_shortcode = do_shortcode($decode_content);
@@ -377,7 +378,9 @@ if (!function_exists('allure_news_read_time')) :
             $word_count_strings = sprintf(_n('%s min read', '%s min read', number_format_i18n($word_per_min), 'allure-news'), number_format_i18n($word_per_min));
             if ('post' == get_post_type($post_id)):
                 echo '<span class="min-read"><i class="fa fa-clock-o" aria-hidden="true"></i>';
-                echo esc_html($word_count_strings);
+                if($hide_read_time):
+                    echo esc_html($word_count_strings);
+                endif; 
                 echo '</span>';
             endif;
 
