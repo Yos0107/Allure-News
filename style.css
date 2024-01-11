@@ -1950,7 +1950,7 @@ blockquote {
 .trending-wrapper {
     overflow: hidden;
     position: relative;
-    margin: 15px 0;
+    margin: 20px 0;
     border-left: none;
     border-right: none;
 }
@@ -2928,6 +2928,7 @@ Post Content
 .widget ul.ct-nav-tabs li.ct-title-head {
     background: #000;
     line-height: 1;
+    transition: 0.3s ease-in-out;
 }
 
 .widget .ct-title-head.ct-rotate a {
@@ -3065,6 +3066,12 @@ a .ct-title-head.ct-rotate:hover,
     top: 0;
     right: 0;
     width: 82px;
+    background-color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+.search-form input[type="submit"]:hover {
+    background-color: #525CEB;
 }
 
 /*--------------------------------------------------------------
@@ -4486,6 +4493,26 @@ body.admin-bar .ct-sticky {
 }
 
 .widget_search .wp-block-search__input {
+    border-radius: 5px;
+}
+
+/* CATEGORY-COLUMN */
+
+.allure-news-cat_column .ct-two-cols .widget-title {
+    margin-bottom: 20px;
+}
+
+.allure-news-cat_column .ct-two-cols .ct-post-overlay {
+    margin-bottom: 30px;
+}
+
+.allure-news-cat_column .ct-two-cols .list-post li {
+    padding-bottom: 30px;
+}
+
+/* RELATED POST SECTION  */
+
+.related-pots-block .widget-image img {
     border-radius: 5px;
 }
 
