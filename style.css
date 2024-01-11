@@ -2769,6 +2769,7 @@ ul.ct-carousel {
     margin-right: 5px;
     line-height: 34px;
     margin-bottom: 10px;
+    border-radius: 3px;
 }
 
 .meta_bottom .post-share a,

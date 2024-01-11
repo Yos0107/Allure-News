@@ -206,20 +206,20 @@ if (!function_exists('allure_news_constuct_social_sharing')) :
             <div class="text_share header-text"><?php _e('Share', 'allure-news'); ?></div>
             <div class="post-share">
                     <a target="_blank" href="<?php echo $allure_news_facebook_sharing_url; ?>">
-                        <i class="fa fa-facebook"></i>
+                        <i class="fab fa-facebook"></i>
                         <?php esc_html_e('Facebook', 'allure-news'); ?>
                     </a>
                     <a target="_blank" href="<?php echo $allure_news_twitter_sharing_url; ?>">
-                        <i class="fa fa-twitter"></i>                        
+                        <i class="fab fa-x-twitter"></i>                        
                         <?php esc_html_e('Twitter', 'allure-news'); ?>
                     </a>
                     <a target="_blank" href="<?php echo $allure_news_pinterest_sharing_url; ?>">
-                        <i class="fa fa-pinterest"></i>
+                        <i class="fab fa-pinterest"></i>
                         
                         <?php esc_html_e('Pinterest', 'allure-news'); ?>
                     </a>
                     <a target="_blank" href="<?php echo $allure_news_linkedin_sharing_url; ?>">
-                        <i class="fa fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                         <?php esc_html_e('Linkedin', 'allure-news'); ?>
                         
                     </a>
