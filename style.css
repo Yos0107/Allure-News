@@ -4516,6 +4516,15 @@ body.admin-bar .ct-sticky {
     padding-bottom: 30px;
 }
 
+.allure-news-cat_column .post-block-style {
+    display: flex;
+    column-gap: 5px;
+}
+
+.allure-news-cat_column .post-block-style .post-content {
+    margin-top: 0;
+}
+
 /* RELATED POST SECTION  */
 
 .related-pots-block .widget-image img {
@@ -4624,5 +4633,25 @@ body.admin-bar .ct-sticky {
         width: 100%;
     }
 
+    /* allure-news-article-wrapper */
 
+    .allure-news-article-wrapper .allure-news-content-area {
+        padding: 15px 0;
+    }
+
+    .allure-news-article-wrapper .allure-news-content-area .entry-content {
+        margin-top: 10px;
+    }
+
+    .allure-news-article-wrapper .allure-news-content-area .entry-content p {
+        margin-top: 10px;
+    }
+
+    .allure-news-cat_column .ct-cat-cols .ct-two-cols:nth-child(2) {
+        margin-top: 10px;
+    }
+
+    .allure-news-cat_column.widget {
+        margin-bottom: 15px;
+    }
 }
