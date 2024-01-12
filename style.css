@@ -2888,6 +2888,18 @@ Post Content
     font-size: 24px;
 }
 
+.widget_block .widget-title:before{
+    width: 0;
+}
+
+.widget_block ul li:before{
+    content: '\f105';
+    font-family: fontawesome;
+    font-weight: 900;
+    color: #fff;
+    margin-right: 10px;
+}
+
 .widget-title span {
     position: relative;
     background-color: #fff;
