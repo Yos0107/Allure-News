@@ -983,6 +983,11 @@ a.ct-show-hide-top:focus {
         padding-right: 15px;
     }
 
+    .container-inner.clearfix.logo-wrapper-container {
+        display: flex;
+        align-items: center;
+    }
+
     .logo-wrapper.full-wrapper,
     .logo-right-wrapper.full-wrapper {
         width: 100%;
