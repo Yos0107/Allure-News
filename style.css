@@ -988,6 +988,10 @@ a.ct-show-hide-top:focus {
         align-items: center;
     }
 
+    .container-inner.clearfix.logo-wrapper-container.logo-center {
+        display: block;
+    }
+
     .logo-wrapper.full-wrapper,
     .logo-right-wrapper.full-wrapper {
         width: 100%;

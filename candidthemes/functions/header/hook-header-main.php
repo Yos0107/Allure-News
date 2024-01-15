@@ -40,7 +40,7 @@ if (!function_exists('allure_news_construct_main_header')) {
             <?php
         }
         ?>
-        <div class="container-inner clearfix logo-wrapper-container">
+        <div class="container-inner clearfix logo-wrapper-container <?php if($logo_class == 'full-wrapper text-center'): echo "logo-center"; endif; ?>">
         <div class="logo-wrapper <?php echo $logo_class ?>">
             <div class="site-branding">
 
