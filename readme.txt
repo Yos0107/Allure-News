@@ -41,10 +41,55 @@ Allure News is distributed under the terms of the GNU General Public License v2
 
 == Images Used in Screenshot ==
 
-Image for theme screenshot, Copyright Tim Sullivan
+Image for theme screenshot, Copyright Pxhere
+License: Creative Commons CC0 license.
+License URI: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1037258
+
+Image for theme screenshot, Copyright Toa Heftiba
 License: Creative Commons CC0 license.
 License URI: https://stocksnap.io/license
-Source: https://stocksnap.io/photo/fair-amusement-LKJINN2P3C
+Source: https://stocksnap.io/photo/people-woman-P6LLNSTRYW
+
+Image for theme screenshot, Copyright  Living Together
+License: Creative Commons CC0 license.
+License URI: https://stocksnap.io/license
+Source: https://stocksnap.io/photo/couple-picture-AYHGTVH5BQ
+
+Image for theme screenshot, Copyright Candace McDaniel
+License: Creative Commons CC0 license.
+License URI: https://stocksnap.io/license
+Source: https://stocksnap.io/photo/colorful-graffiti-5JJD8YWR1C
+
+Image for theme screenshot, Copyright Altered Reality
+License: Creative Commons CC0 license.
+License URI: https://stocksnap.io/license
+Source: https://stocksnap.io/photo/young-woman-YRE7TNGEOW
+
+Image for theme screenshot, Copyright  Retro 56
+License: Creative Commons CC0 license.
+License URI: https://stocksnap.io/license
+Source: https://stocksnap.io/photo/smartphone-camera-TBGNSSQV6B
+
+Image for theme screenshot, Copyright An Min
+License: Creative Commons CC0 license.
+License URI: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1452467
+
+Image for theme screenshot, Copyright grenny
+License: Creative Commons CC0 license.
+License URI: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1452467
+
+Image for theme screenshot, Copyright Kristin Hardwick
+License: Creative Commons CC0 license.
+License URI: https://stocksnap.io/license
+Source: https://stocksnap.io/photo/woman-business-LERRJPTMHP
+
+Image for theme screenshot, Copyright Direct Media
+License: Creative Commons CC0 license.
+License URI: https://stocksnap.io/license
+Source: https://stocksnap.io/photo/bed-family-IZDU79XQIE
 
 
 Image for theme screenshot Advertisement Image, Copyright Candid Themes
