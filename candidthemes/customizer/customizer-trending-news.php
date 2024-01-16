@@ -95,8 +95,8 @@ $wp_customize->add_setting( 'allure_news_options[allure-news-post-speed]', array
 
 ) );
 $wp_customize->add_control( 'allure_news_options[allure-news-post-speed]', array(
-  'label'     => __( 'Speed Controller.', 'chiso' ),
-  'description' => __('Change the speed.', 'chiso'),
+  'label'     => __( 'Speed Controller.', 'allure-news' ),
+  'description' => __('Change the speed.', 'allure-news'),
   'section'   => 'allure_news_trending_news_section',
   'settings'  => 'allure_news_options[allure-news-post-speed]',
   'type'      => 'number',

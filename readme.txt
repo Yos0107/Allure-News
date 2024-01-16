@@ -101,5 +101,5 @@ License: Creative Commons CC0 license.
 Source: Self Created - GPL License
 
 == Changelog ==
-= 1.0.0 - January 11 2024 =
+= 1.0.0 - January 16 2024 =
 * Initial Release on WordPress Repository
