@@ -2913,7 +2913,7 @@ Post Content
 .widget-title:before,
 .widget ul.ct-nav-tabs:before {
     content: '';
-    background: #0073aa;
+    background: #525CEB;
     display: inline-block;
     position: absolute;
     right: 0;
@@ -3609,14 +3609,14 @@ div.breadcrumbs {
     top: 10px;
     left: 10px;
     z-index: 2;
-    border: 1px solid #0073aa;
+    border: 1px solid #525CEB;
     border-radius: 100%;
     color: #fff;
     width: 30px;
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background: #0073aa;
+    background: #525CEB;
 }
 
 .ct-post-overlay .candid-allure-post-format {

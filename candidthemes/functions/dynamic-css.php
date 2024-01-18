@@ -87,14 +87,10 @@ if (!function_exists('allure_news_dynamic_css')) :
                         $cat_color_code = $allure_news_theme_options[$cat_color];
                         $allure_news_custom_css .= "
                     .cat-{$category_list->cat_ID} .ct-title-head,
-                    .cat-{$category_list->cat_ID}.widget-title:before,
-                    .cat-{$category_list->cat_ID} .widget-title:before,
                     .ct-cat-item-{$category_list->cat_ID}{
                     background: {$cat_color_code}!important; }";
                     $allure_news_custom_css .= " 
                     .cat-{$category_list->cat_ID} .ct-title-head,
-                    .cat-{$category_list->cat_ID}.widget-title:before,
-                    .cat-{$category_list->cat_ID} .widget-title:before,
                     .ct-cat-item-{$category_list->cat_ID}{
                         color: #fff!important;
                         background-size: 6% 100%!important;
@@ -105,13 +101,9 @@ if (!function_exists('allure_news_dynamic_css')) :
                     }";
                     $allure_news_custom_css .="
                     .cat-{$category_list->cat_ID} .ct-title-head,
-                    .cat-{$category_list->cat_ID}.widget-title:before,
-                    .cat-{$category_list->cat_ID} .widget-title:before,
                     .ct-cat-item-{$category_list->cat_ID}:hover{
                         background-image: linear-gradient($category_line_color, $category_line_color)!important;
                         background-size: 100% 100% !important;
-                        width: max-content !important;
-
                     }";
                     $allure_news_custom_css .= "
                     .widget_allure_news_category_tabbed_widget.widget ul.ct-nav-tabs li a.ct-tab-{$category_list->cat_ID} {
