@@ -96,7 +96,7 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
             'allure-news-enable-static-page-sharing' => false,
 
             /*Footer Section*/
-            'allure-news-footer-copyright' =>  esc_html__('All Rights Reserved 2023.','allure-news'),
+            'allure-news-footer-copyright' =>  esc_html__('All Rights Reserved 2024.','allure-news'),
             'allure-news-go-to-top'=> true,
             
             /**Preloader */

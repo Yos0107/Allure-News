@@ -268,7 +268,7 @@ function allure_news_scripts()
 
     wp_enqueue_style('slick-theme-css', get_template_directory_uri() . '/candidthemes/assets/framework/slick/slick-theme.css');
 
-    wp_enqueue_script('slick', get_template_directory_uri() . '/candidthemes/assets/framework/slick/slick.min.js', array('jquery'), '20151217', true);
+    wp_enqueue_script('slick', get_template_directory_uri() . '/candidthemes/assets/framework/slick/slick.min.js', array('jquery'), _S_VERSION, true);
 
     wp_enqueue_style('allure-news-style', get_stylesheet_uri());
 
