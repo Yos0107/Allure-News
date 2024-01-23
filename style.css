@@ -1959,6 +1959,7 @@ blockquote {
 .trending-wrapper {
     overflow: hidden;
     position: relative;
+    display: flex;
     margin: 20px 0;
     border-left: none;
     border-right: none;
@@ -1975,6 +1976,7 @@ blockquote {
     z-index: 3;
     color: #fff;
     border-radius: 0 5px 5px 0;
+    min-width: 135px;
 }
 
 .trending-content {
@@ -2515,7 +2517,7 @@ blockquote {
 }
 
 .main-navigation ul li a:hover::before {
-    width: 0%;
+    width: 100%;
 }
 
 .main-navigation ul li a:hover,
@@ -2571,8 +2573,13 @@ blockquote {
 
     .main-navigation li {
         float: none;
-        padding-left: 15px;
-        padding-right: 15px;
+        /* padding-left: 15px;
+        padding-right: 15px; */
+    }
+
+    .main-navigation .sub-menu li a {
+        display: inline-block;
+        position: relative;
     }
 
     .main-navigation li.menu-item-has-children ul {
@@ -2586,6 +2593,7 @@ blockquote {
 
     .main-navigation ul ul {
         width: 100%;
+        max-width: 250px;
     }
 
     .main-navigation li.menu-item-has-children.focus>ul {
@@ -2898,11 +2906,11 @@ Post Content
     font-size: 24px;
 }
 
-.widget_block .widget-title:before{
+.widget_block .widget-title:before {
     width: 0;
 }
 
-.widget_block ul li:before{
+.widget_block ul li:before {
     content: '\f105';
     font-family: fontawesome;
     font-weight: 900;
@@ -4169,14 +4177,15 @@ div.breadcrumbs {
 
 /* 22. Preloader 2*/
 #preloader {
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	background: #fff;
-	z-index: 9999;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 9999;
 }
+
 #preloader .loader-inner {
     position: absolute;
     top: 50%;
@@ -4189,6 +4198,7 @@ div.breadcrumbs {
     transition: all 0s;
     font-size: 0;
 }
+
 #preloader .loader-inner #text-loader {
     position: relative;
     z-index: 1002;
@@ -4204,6 +4214,7 @@ div.breadcrumbs {
     height: auto;
     max-width: 90vw;
 }
+
 .loader-inner #loader h2 {
     margin: 0 0;
     font-family: 'Roboto', sans-serif;
@@ -4212,9 +4223,11 @@ div.breadcrumbs {
     font-weight: 700;
     line-height: 1;
 }
+
 #bg-loader {
     color: #7486b189;
 }
+
 #fg-loader {
     color: #222222;
     position: absolute;
@@ -4226,27 +4239,34 @@ div.breadcrumbs {
     animation-iteration-count: infinite;
     white-space: nowrap;
 }
+
 #fg-loader span {
     color: var(--primary-color);
 }
+
 @-webkit-keyframes leftToRight {
     0% {
         width: 1px;
     }
+
     95% {
         width: 100%;
     }
+
     100% {
         width: 100%;
     }
 }
+
 @keyframes leftToRight {
     0% {
         width: 1px;
     }
+
     95% {
         width: 100%;
     }
+
     100% {
         width: 100%;
     }
