@@ -2433,9 +2433,15 @@ blockquote {
     background-color: #000
 }
 
+.main-navigation li {
+    margin: 0 20px;
+}
+
 .main-navigation li a {
-    padding: 15px 20px;
+    padding: 15px 5px;
     color: #fff;
+    position: relative;
+    display: inline-block;
 }
 
 .main-navigation li a:visited {
@@ -2509,7 +2515,7 @@ blockquote {
 }
 
 .main-navigation ul li a:hover::before {
-    width: 80%;
+    width: 0%;
 }
 
 .main-navigation ul li a:hover,
