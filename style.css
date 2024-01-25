@@ -3824,6 +3824,10 @@ div.breadcrumbs {
 /*---------------------------------------------------
 #  Thumbnail Post Widget
 *   ----------------------------------------------------- */
+.allure-news-thumbnail-post .title-wrapper.cat- {
+    margin-bottom: 20px;
+}
+
 .allure-news-thumbnail-post .ct-two-cols {
     padding-top: 25px;
 }
@@ -4721,6 +4725,10 @@ body.admin-bar .ct-sticky {
 
     .ct-grid-post-list .post-title {
         font-size: 24px;
+    }
+
+    .allure-news-cat_column .ct-two-cols .list-post li:last-child {
+        padding-bottom: 0;
     }
 
     /* RELATED POST  */
