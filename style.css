@@ -2802,17 +2802,26 @@ ul.ct-carousel {
 }
 
 .post-share {
-    display: inline-block;
     position: relative;
+    display: flex;
+    column-gap: 5px;
 }
 
 .post-share a {
-    padding: 0 15px;
+    padding: 2px 14px;
     display: inline-block;
     margin-right: 5px;
     line-height: 34px;
     margin-bottom: 10px;
     border-radius: 3px;
+    width: 40px;
+    height: 40px;
+}
+
+.post-share a i {
+    font-size: 0;
+    height: 30px;
+    width: 30px;
 }
 
 .meta_bottom .post-share a,
@@ -2826,19 +2835,19 @@ ul.ct-carousel {
 }
 
 .meta_bottom .post-share a[href*="facebook.com"]:hover {
-    background-color: #2b4a8c;
+    background-color: #525CEB
 }
 
 .meta_bottom .post-share a[href*="twitter.com"]:hover {
-    background-color: #1d71b3;
+    background-color: #525CEB
 }
 
 .meta_bottom .post-share a[href*="linkedin.com"]:hover {
-    background-color: #06689c;
+    background-color: #525CEB
 }
 
 .meta_bottom .post-share a[href*="pinterest.com"]:hover {
-    background-color: #a00600;
+    background-color: #525CEB
 }
 
 .entry-content p,
