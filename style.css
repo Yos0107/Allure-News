@@ -772,7 +772,7 @@ a.ct-show-hide-top:focus {
 
 .main-navigation ul ul li:hover>ul,
 .main-navigation ul ul li.focus>ul {
-    left: 100%;
+    left: 178px;
 }
 
 .main-navigation ul ul a {
@@ -836,7 +836,7 @@ a.ct-show-hide-top:focus {
     content: '';
     display: block;
     height: 3px;
-    width: 30px;
+    width: 20px;
     margin: 7px 0;
     transition: all .2s ease-in-out;
 }
@@ -2481,8 +2481,11 @@ blockquote {
     left: 0;
 }
 
+.navbar-nav .sub-menu li {
+    width: 200px;
+}
+
 .navbar-nav>li.menu-item-has-children>a::after {
-    color: #000;
     content: "\f107";
     font-family: FontAwesome;
     font-size: 12px;
@@ -2493,6 +2496,23 @@ blockquote {
 .navbar-nav>li.menu-item-has-children>a:hover:after {
     content: "\f106";
 }
+
+.navbar-nav .sub-menu>li.menu-item-has-children::after {
+    content: "\f107";
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-family: FontAwesome;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.navbar-nav .sub-menu>li.menu-item-has-children:hover:after {
+    content: "\f106";
+}
+
+
 
 .main-navigation li li a,
 .main-navigation li li a:visited {
@@ -2593,7 +2613,7 @@ blockquote {
 
     .main-navigation ul ul {
         width: 100%;
-        max-width: 250px;
+        max-width: 200px;
     }
 
     .main-navigation li.menu-item-has-children.focus>ul {
@@ -2603,12 +2623,12 @@ blockquote {
     }
 
     .main-navigation ul ul a {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .main-navigation ul ul a {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .main-navigation ul ul li.focus ul {
