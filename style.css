@@ -772,7 +772,7 @@ a.ct-show-hide-top:focus {
 
 .main-navigation ul ul li:hover>ul,
 .main-navigation ul ul li.focus>ul {
-    left: 100%;
+    left: 178px;
 }
 
 .main-navigation ul ul a {
@@ -836,7 +836,7 @@ a.ct-show-hide-top:focus {
     content: '';
     display: block;
     height: 3px;
-    width: 30px;
+    width: 20px;
     margin: 7px 0;
     transition: all .2s ease-in-out;
 }
@@ -1959,6 +1959,7 @@ blockquote {
 .trending-wrapper {
     overflow: hidden;
     position: relative;
+    display: flex;
     margin: 20px 0;
     border-left: none;
     border-right: none;
@@ -1975,6 +1976,7 @@ blockquote {
     z-index: 3;
     color: #fff;
     border-radius: 0 5px 5px 0;
+    min-width: 135px;
 }
 
 .trending-content {
@@ -2479,8 +2481,11 @@ blockquote {
     left: 0;
 }
 
+.navbar-nav .sub-menu li {
+    width: 200px;
+}
+
 .navbar-nav>li.menu-item-has-children>a::after {
-    color: #000;
     content: "\f107";
     font-family: FontAwesome;
     font-size: 12px;
@@ -2491,6 +2496,23 @@ blockquote {
 .navbar-nav>li.menu-item-has-children>a:hover:after {
     content: "\f106";
 }
+
+.navbar-nav .sub-menu>li.menu-item-has-children::after {
+    content: "\f107";
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-family: FontAwesome;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.navbar-nav .sub-menu>li.menu-item-has-children:hover:after {
+    content: "\f106";
+}
+
+
 
 .main-navigation li li a,
 .main-navigation li li a:visited {
@@ -2515,7 +2537,7 @@ blockquote {
 }
 
 .main-navigation ul li a:hover::before {
-    width: 0%;
+    width: 100%;
 }
 
 .main-navigation ul li a:hover,
@@ -2571,8 +2593,13 @@ blockquote {
 
     .main-navigation li {
         float: none;
-        padding-left: 15px;
-        padding-right: 15px;
+        /* padding-left: 15px;
+        padding-right: 15px; */
+    }
+
+    .main-navigation .sub-menu li a {
+        display: inline-block;
+        position: relative;
     }
 
     .main-navigation li.menu-item-has-children ul {
@@ -2586,6 +2613,7 @@ blockquote {
 
     .main-navigation ul ul {
         width: 100%;
+        max-width: 200px;
     }
 
     .main-navigation li.menu-item-has-children.focus>ul {
@@ -2595,12 +2623,12 @@ blockquote {
     }
 
     .main-navigation ul ul a {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .main-navigation ul ul a {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .main-navigation ul ul li.focus ul {
@@ -2774,17 +2802,26 @@ ul.ct-carousel {
 }
 
 .post-share {
-    display: inline-block;
     position: relative;
+    display: flex;
+    column-gap: 5px;
 }
 
 .post-share a {
-    padding: 0 15px;
+    padding: 2px 14px;
     display: inline-block;
     margin-right: 5px;
     line-height: 34px;
     margin-bottom: 10px;
     border-radius: 3px;
+    width: 40px;
+    height: 40px;
+}
+
+.post-share a i {
+    font-size: 0;
+    height: 30px;
+    width: 30px;
 }
 
 .meta_bottom .post-share a,
@@ -2798,19 +2835,19 @@ ul.ct-carousel {
 }
 
 .meta_bottom .post-share a[href*="facebook.com"]:hover {
-    background-color: #2b4a8c;
+    background-color: #525CEB
 }
 
 .meta_bottom .post-share a[href*="twitter.com"]:hover {
-    background-color: #1d71b3;
+    background-color: #525CEB
 }
 
 .meta_bottom .post-share a[href*="linkedin.com"]:hover {
-    background-color: #06689c;
+    background-color: #525CEB
 }
 
 .meta_bottom .post-share a[href*="pinterest.com"]:hover {
-    background-color: #a00600;
+    background-color: #525CEB
 }
 
 .entry-content p,
@@ -2898,11 +2935,11 @@ Post Content
     font-size: 24px;
 }
 
-.widget_block .widget-title:before{
+.widget_block .widget-title:before {
     width: 0;
 }
 
-.widget_block ul li:before{
+.widget_block ul li:before {
     content: '\f105';
     font-family: fontawesome;
     font-weight: 900;
@@ -3816,6 +3853,10 @@ div.breadcrumbs {
 /*---------------------------------------------------
 #  Thumbnail Post Widget
 *   ----------------------------------------------------- */
+.allure-news-thumbnail-post .title-wrapper.cat- {
+    margin-bottom: 20px;
+}
+
 .allure-news-thumbnail-post .ct-two-cols {
     padding-top: 25px;
 }
@@ -4169,14 +4210,15 @@ div.breadcrumbs {
 
 /* 22. Preloader 2*/
 #preloader {
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	background: #fff;
-	z-index: 9999;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 9999;
 }
+
 #preloader .loader-inner {
     position: absolute;
     top: 50%;
@@ -4189,6 +4231,7 @@ div.breadcrumbs {
     transition: all 0s;
     font-size: 0;
 }
+
 #preloader .loader-inner #text-loader {
     position: relative;
     z-index: 1002;
@@ -4204,6 +4247,7 @@ div.breadcrumbs {
     height: auto;
     max-width: 90vw;
 }
+
 .loader-inner #loader h2 {
     margin: 0 0;
     font-family: 'Roboto', sans-serif;
@@ -4212,9 +4256,11 @@ div.breadcrumbs {
     font-weight: 700;
     line-height: 1;
 }
+
 #bg-loader {
     color: #7486b189;
 }
+
 #fg-loader {
     color: #222222;
     position: absolute;
@@ -4226,27 +4272,34 @@ div.breadcrumbs {
     animation-iteration-count: infinite;
     white-space: nowrap;
 }
+
 #fg-loader span {
     color: var(--primary-color);
 }
+
 @-webkit-keyframes leftToRight {
     0% {
         width: 1px;
     }
+
     95% {
         width: 100%;
     }
+
     100% {
         width: 100%;
     }
 }
+
 @keyframes leftToRight {
     0% {
         width: 1px;
     }
+
     95% {
         width: 100%;
     }
+
     100% {
         width: 100%;
     }
@@ -4458,7 +4511,7 @@ body.admin-bar .ct-sticky {
 .cate-tabs-nav {
     display: flex;
     margin-bottom: 30px;
-    gap: 20px;
+    gap: 10px;
 }
 
 .cate-tabs-nav li.ui-state-active a {
@@ -4703,6 +4756,10 @@ body.admin-bar .ct-sticky {
         font-size: 24px;
     }
 
+    .allure-news-cat_column .ct-two-cols .list-post li:last-child {
+        padding-bottom: 0;
+    }
+
     /* RELATED POST  */
 
     .related-pots-block .related-post-entries {
@@ -4762,5 +4819,32 @@ body.admin-bar .ct-sticky {
     .allure-news-cat_column.widget {
         margin-bottom: 15px;
     }
+<<<<<<< HEAD
     
+=======
+
+    .allure-news-category-tabbed .cate-tabs ul.cate-tabs-nav {
+        left: 0;
+        top: 40px;
+        padding-left: 0;
+    }
+
+    .allure-news-category-tabbed .featured-posts-block .list-post li:first-child {
+        margin-top: 30px;
+    }
+
+    .allure-news-category-tabbed .cate-tabs ul.cate-tabs-nav li a {
+        padding: 5px 10px;
+        color: #fff;
+        background-color: #444;
+        border-radius: 5px;
+        font-weight: normal;
+        transition: 0.3s ease-in-out;
+    }
+
+    .allure-news-category-tabbed .cate-tabs ul.cate-tabs-nav li a:hover {
+        color: #fff;
+        background-color: #525CEB
+    }
+>>>>>>> 60c4b59de29224e811834ac461999b864d28ba19
 }
